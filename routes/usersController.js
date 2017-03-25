@@ -20,17 +20,17 @@ router.get('/createaccount', function(req, res) {
 	res.render('users/new');
 });
 
-// USERS NEW PUT ROUTE
+// USERS NEW POST ROUTE
 router.post("/", function(req, res) {
 	console.log(req.body);
 	var user = new User ({
 		email: req.body.email,
 		firstName: req.body.firstName,
 		lastName: req.body.lastName,
-		userName: req.body.userName,
+		username: req.body.username,
 		password: req.body.password
 	});
-	
+
 	user.save(function(err, user) {
 		if (err) { console.log(err); }
 		console.log(user);
