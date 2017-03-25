@@ -21,7 +21,22 @@ router.get('/createaccount', function(req, res) {
 });
 
 // USERS NEW PUT ROUTE
-router.put('/')
+router.post("/", function(req, res) {
+	console.log(req.body);
+	var user = new User ({
+		email: req.body.email,
+		firstName: req.body.firstName,
+		lastName: req.body.lastName,
+		userName: req.body.userName,
+		password: req.body.password
+	});
+	
+	user.save(function(err, user) {
+		if (err) { console.log(err); }
+		console.log(user);
+		res.redirect("/sessions/login");
+	});
+});
 
 
 
