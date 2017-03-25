@@ -9,7 +9,6 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 var methodOverride = require('method-override');
-var authHelpers = require('./helpers/auth.js')
 
 // Connect to database
 if (process.env.MONGODB_URI) {
