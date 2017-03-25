@@ -38,7 +38,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// controllers
+// CONTROLLERS
 var indexController = require('./routes/indexController');
 var usersController = require('./routes/usersController');
 var mountsController= require('./routes/mountsController');

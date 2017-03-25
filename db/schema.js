@@ -23,11 +23,11 @@ var MountSchema = new Schema({
 });
 
 var UserSchema = new Schema({
-	first_name: String,
-	last_name: String,
+	firstName: String,
+	lastName: String,
+	email: { type: String, required: true, unique: true },
 	username: { type: String, required: true, unique: true },
 	password: { type: String, required: true },
-	email: { type: String, required: true, unique: true },
 	mounts: [MountSchema],
 });
 

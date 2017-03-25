@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 //ABOUT PAGE
-router.get('/about', function(req, res, next) {
+router.get('/about', function(req, res) {
 	res.render('about');
 });
 
