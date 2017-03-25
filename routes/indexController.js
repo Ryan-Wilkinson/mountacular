@@ -6,6 +6,17 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
-module.exports = router;
-
 //ABOUT PAGE
+router.get('/about', function(req, res, next) {
+	res.render('about');
+});
+
+
+
+
+
+
+
+
+
+module.exports = router;
