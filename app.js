@@ -42,8 +42,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 var indexController = require('./routes/indexController');
 var usersController = require('./routes/usersController');
 var mountsController= require('./routes/mountsController');
+var sessionsController= require('./routes/sessionsController');
 
 app.use('/', indexController);
+app.use('/sessions', sessionsController);
 app.use('/users', usersController);
 app.use('/users/:userId/mounts', mountsController);
 
