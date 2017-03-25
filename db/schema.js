@@ -31,6 +31,24 @@ var UserSchema = new Schema({
 	mounts: [MountSchema],
 });
 
+//SAVE MOUNT SCHEMA
+MountSchema.pre('save', function(next) {
+  now = new Date();
+  this.updated_at = now;
+
+  if (!this.created_at) { this.created_at = now }
+  next();
+});
+
+//SAVE USER SCHEMA
+UserSchema.pre('save', function(next) {
+  now = new Date();
+  this.updated_at = now;
+
+  if (!this.created_at) { this.created_at = now }
+  next();
+});
+
 //SET MODELS FOR EXPORT
 var MountModel = mongoose.model("Mount", MountSchema);
 var UserModel = mongoose.model("User", UserSchema);
