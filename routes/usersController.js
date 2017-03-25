@@ -9,7 +9,8 @@ router.get('/createaccount', function(req, res) {
 	res.render('users/new');
 });
 
-
+// USERS NEW PUT ROUTE
+router.put('/')
 
 
 
