@@ -1,9 +1,17 @@
 var express = require('express');
 var router = express.Router();
 
-//HOME PAGE
-router.get('/', function(req, res, next) {
-  res.render('index');
+// USERS NEW CREATE ROUTE
+router.get('/createaccount', function(res, req) {
+	res.render('users/new');
 });
+
+
+
+
+
+
+
+
 
 module.exports = router;
