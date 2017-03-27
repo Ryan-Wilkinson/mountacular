@@ -13,11 +13,17 @@ router.get('/createaccount', function(req, res) {
 router.get('/:id', authHelpers.authorized, function(req, res) {
   User.findById(req.params.id)
   .exec(function(err, user){
-    if (err) {console.log(err);}
+    if (err) {console.log('youre not authorized');}
+
+  Mount.find({})
+  .exec(function(err, mount) {
+  	if (err) {console.log(err);}
     res.render('./users/show', {
-      user: user
+      user: user,
+      mount: mount
     });
   });
+});
 });
 
 // USERS NEW POST ROUTE

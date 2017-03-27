@@ -12,9 +12,10 @@ router.post('/login', authHelpers.loginUser, function(req, res){
   res.redirect(`/users/${req.session.currentUser.id}`);
 });
 
-
-
-
-
+router.delete('/', function(req, res){
+  req.session.destroy(function(){
+    res.redirect('/');
+  });
+});
 
 module.exports = router;
