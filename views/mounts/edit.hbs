@@ -7,36 +7,28 @@
 	</div>
 	<div>
 		<label for="location">Location: </label><br>
-		<input type="text" name="location" value="{{mount.qualityId}}">
+		<input type="text" name="location" value="{{mount.foundAt}}">
 	</div>
 	<div>
-		<label for="type">Type: </label><br>
-		<input type="text" name="type" value="{{restaurant.type}}">
+		<label for="type">Obtained: </label><br>
+		<input type="text" name="obtained" value="{{mount.obtainedHow}}">
 	</div>
 	<div>
-		<label for="imgUrl">Image URL:</label><br>
-		<input type="text" name="imgUrl" value="{{restaurant.imgUrl}}">
+		<label for="imgUrl">Image URL: </label><br>
+		<input type="text" name="icon" value="{{mount.icon}}">
 	</div>
 	<div>
-		<label for="description">Description:</label><br>
-		<input type="text" name="description" value="{{restaurant.description}}">
-	</div>
-	<div>
-		<label for="description">Food Type:</label><br>
-		<input type="text" name="food" value="{{restaurant.food}}">
+		<label for="description">Description: </label><br>
+		<input type="text" name="description" value="{{mount.description}}">
 	</div>
 
 
 <br>
 	<div>
-		<input class="btn btn-warning" type="submit" value="Update Restaurant">
+		<input class="btn btn-warning" type="submit" value="Update Mount">
 	</div>
 </form>
 
-<form action="/users/{{user.id}}/restaurants/{{restaurant.id}}?_method=DELETE" method="POST">
-	<input class="btn btn-danger" type="submit" value="Delete This">
+<form action="/users/{{user.id}}/mounts/{{mount.id}}?_method=DELETE" method="POST">
+	<input class="btn btn-danger" type="submit" value="Remove Mount">
 </form>
-
-</div>
-
-</div>
