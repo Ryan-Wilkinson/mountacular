@@ -16,7 +16,7 @@ router.post("/", authHelpers.createSecure, function(req, res) {
 		firstName: req.body.firstName,
 		lastName: req.body.lastName,
 		username: req.body.username,
-		password: req.body.password
+		password_digest: res.hashedPassword
 	});
 
 	user.save(function(err, user) {
