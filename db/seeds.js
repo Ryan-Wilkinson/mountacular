@@ -58,8 +58,8 @@ var giantCock = new Mount ({
 	description: 'Giant robust, colorful, and regal cock that I can ride around on and even fly for a short duration.'
 });
 
-var giantSnake = new Mount ({
-	name: 'Giant Snake',
+var giantSnek = new Mount ({
+	name: 'Giant Snek',
 	spellId: 3,
 	creatureId: 1872366,
 	itemId: 13489259,
@@ -71,7 +71,7 @@ var giantSnake = new Mount ({
 	isJumping: false,  // blizzard api ends here
 	foundAt: 'The Amazon Jungle Boi',
 	obtainedHow: 'Tamed his ass',
-	description: 'A giant snake I tamed while exploring in the amazon, can ride around and scare the hell out of people.'
+	description: 'A giant snek I tamed while exploring in the amazon, can ride around and scare the hell out of people.'
 });
 
 var tRex = new Mount ({
@@ -196,9 +196,9 @@ giantCock.save(function(err) {
   console.log('Giant Cock created');
 });
 
-giantSnake.save(function(err) {
+giantSnek.save(function(err) {
   if (err) console.log(err);
-  console.log('Giant Snake created');
+  console.log('Giant Snek created');
 });
 
 tRex.save(function(err) {
