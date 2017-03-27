@@ -2,8 +2,8 @@
 <h1> Hello {{user.username}}!</h1>
 
 <div>
-<h6> {{#each mount}} </h6>
-	<li>{{this.icon}}</li>
+ {{#each mount}}
+	<li><a href="/users/{{../user.id}}/mounts/{{this.id}}/edit"><img src="{{this.icon}}" alt="Mount Image"></a></li>
 	<li><h3>{{this.name}}</h3></li>
 	<li><b>Quaility: </b>{{this.qualityId}}</li>
 	<li><b>Ground Mount?: </b>{{this.isGround}}</li>

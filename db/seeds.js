@@ -32,14 +32,13 @@ var blueBike = new Mount ({
 	creatureId: 1872364,
 	itemId: 13489257,
 	qualityId: 9,
-	icon: String,     // COME BACK TO THIS ~~!!@$@!$
+	icon: 'http://www.bcbsnc.com/assets/campaigns/public/gonc/images/9234-bike.jpg',
 	isGround: true,
 	isFlying: false,
 	isAquatic: false,
 	isJumping: true,  // blizzard api ends here
-	dateObtained: ,
 	foundAt: 'The neighborhood junkyard',
-	obtainedHow: 'Stole that shit',  // found/purchased/stole etc.
+	obtainedHow: 'Stole that shit',
 	description: 'A rusty old blue bike that a I found at the junkyard, surprisingly both tires had air. Really fun riding around and jumping curbs'
 });
 

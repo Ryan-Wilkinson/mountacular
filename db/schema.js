@@ -16,7 +16,10 @@ var MountSchema = new Schema({
 	isFlying: Boolean,
 	isAquatic: Boolean,
 	isJumping: Boolean,  // blizzard api ends here
-	dateObtained: Date,
+	dateObtained: {
+		type: Date,
+		default: Date.now
+	},
 	foundAt: String,
 	obtainedHow: String,  // found/purchased/stole etc.
 	description: String
