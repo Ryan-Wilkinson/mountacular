@@ -3,16 +3,15 @@ var User = require("../models/userModel.js");
 
 function createSecure(req, res, next) {
   var password = req.body.password;
-
   res.hashedPassword = bcrypt.hashSync(password, bcrypt.genSaltSync(10));
   next();
 }
 
 function loginUser(req, res, next) {
-  var username = req.body.username;
+  var email = req.body.email;
   var password = req.body.password;
 
-  User.findOne({ username: username })
+  User.findOne({ email: email })
   .then(function(foundUser){
     if (foundUser == null) {
       res.json({status: 401, data: "unauthorized"});
@@ -26,6 +25,7 @@ function loginUser(req, res, next) {
     res.json({status: 500, data: err});
   });
 };
+
 
 //create a function called "authorized" that checks if the CurrentUser's id matches the id in params
 function authorized (req, res, next) {
