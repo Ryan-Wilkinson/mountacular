@@ -26,7 +26,16 @@ router.post("/", function(req, res) {
 	});
 });
 
-
+// USERS SHOW ROUTE
+router.get('/:id', function(req, res) {
+  User.findById(req.params.id)
+  .exec(function(err, user){
+    if (err) {console.log(err);}
+    res.render('./users/show', {
+      user: user
+    });
+  });
+});
 
 
 

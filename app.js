@@ -50,6 +50,7 @@ app.use('/sessions', sessionsController);
 app.use('/users', usersController);
 app.use('/users/:userId/mounts', mountsController);
 
+// Sessions stuff
 app.use(session({
   secret: "derpderpderpcats",
   resave: false,
