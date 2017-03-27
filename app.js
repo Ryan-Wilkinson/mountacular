@@ -1,7 +1,6 @@
 pry = require('pryjs');
 var express = require('express');
 var app = express();
-require('dotenv').config()
 var mongoose = require('mongoose');
 var path = require('path');
 var favicon = require('serve-favicon');

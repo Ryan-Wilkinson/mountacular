@@ -28,11 +28,10 @@ router.post('/', authHelpers.createSecure, function(req, res) {
 		lastName: req.body.lastName,
 		username: req.body.username,
 		password_digest: res.hashedPassword
-	});
+	})
 
 	user.save(function(err, user) {
-		if (err) { console.log(err); }
-		console.log(req.session.currentUser);
+		if (err) { console.log(err); };
 		res.redirect("/sessions/login");
 	});
 });

@@ -13,6 +13,7 @@ function loginUser(req, res, next) {
 
   User.findOne({ email: email })
   .then(function(foundUser){
+    console.log(foundUser);
     if (foundUser == null) {
       res.json({status: 401, data: "unauthorized"});
 
@@ -24,8 +25,7 @@ function loginUser(req, res, next) {
   .catch(function(err){
     res.json({status: 500, data: err});
   });
-};
-
+}
 
 //create a function called "authorized" that checks if the CurrentUser's id matches the id in params
 function authorized (req, res, next) {
