@@ -50,6 +50,12 @@ app.use('/sessions', sessionsController);
 app.use('/users', usersController);
 app.use('/users/:userId/mounts', mountsController);
 
+app.use(session({
+  secret: "derpderpderpcats",
+  resave: false,
+  saveUninitialized: false
+}));
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
