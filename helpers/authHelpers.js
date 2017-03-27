@@ -1,24 +1,44 @@
-// var User = require("../models/userModel.js");
+var bcrypt = require('bcrypt-nodejs');
+var User = require("../models/userModel.js");
 
-// function loginUser(req, res, next) {
-// 	var username = req.body.username;
-// 	var password = req.body.password;
+function createSecure(req, res, next) {
+  var password = req.body.password;
 
-// 	User.findOne({ username: username })
-// 		.then(function(user) {
-// 			if (user == null) {
-// 				res.json({status: 401, data: "unauthorized"})
-// 			}
-// 			else if (password === user.password) {
-// 				req.session.currentUser = user;
-// 			}
-// 			next();
-// 		})
-// 		.catch(function(err) {
-// 			res.json({status: 500, data: err + " catch faulure"});
-// 		});
-// };
+  res.hashedPassword = bcrypt.hashSync(password, bcrypt.genSaltSync(10));
+  next();
+}
 
-// module.exports = {
-//   loginUser: loginUser,
-// };
+function loginUser(req, res, next) {
+  var username = req.body.username;
+  var password = req.body.password;
+
+  User.findOne({ username: username })
+  .then(function(foundUser){
+    if (foundUser == null) {
+      res.json({status: 401, data: "unauthorized"});
+
+    } else if (bcrypt.compareSync(password, foundUser.password_digest)) {
+      req.session.currentUser = foundUser;
+    }
+    next();
+  })
+  .catch(function(err){
+    res.json({status: 500, data: err});
+  });
+};
+
+//create a function called "authorized" that checks if the CurrentUser's id matches the id in params
+function authorized (req, res, next) {
+  if(!req.session.currentUser || req.params.id !== req.session.currentUser._id) {
+    res.json({status: 404, data: 'oops you\'re not authorized, teehee'});
+  }
+  next();
+}
+
+//Export this function below:
+
+module.exports = {
+  createSecure: createSecure,
+  loginUser: loginUser,
+  authorized: authorized
+};

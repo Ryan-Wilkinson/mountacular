@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router({mergeParams: true});
 var User = require("../models/userModel.js");
 var Mount = require("../models/mountModel.js");
+var authHelpers = require('../helpers/authHelpers.js');
 
 // USERS NEW CREATE ROUTE
 router.get('/createaccount', function(req, res) {
@@ -9,8 +10,7 @@ router.get('/createaccount', function(req, res) {
 });
 
 // USERS NEW POST ROUTE
-router.post("/", function(req, res) {
-	console.log(req.body);
+router.post("/", authHelpers.createSecure, function(req, res) {
 	var user = new User ({
 		email: req.body.email,
 		firstName: req.body.firstName,
@@ -21,14 +21,13 @@ router.post("/", function(req, res) {
 
 	user.save(function(err, user) {
 		if (err) { console.log(err); }
-		console.log(user);
 		console.log(req.session.currentUser);
 		res.redirect("/sessions/login");
 	});
 });
 
 // USERS SHOW ROUTE
-router.get('/:id', function(req, res) {
+router.get('/:id', authHelpers.authorized, function(req, res) {
   User.findById(req.params.id)
   .exec(function(err, user){
     if (err) {console.log(err);}

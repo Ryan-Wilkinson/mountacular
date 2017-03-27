@@ -10,7 +10,7 @@ router.get('/login', function(req, res) {
 });
 
 //LOGIN
-router.post('/login', function(req, res){
+router.post('/login', authHelpers.loginUser, function(req, res){
   res.redirect(`/users/${req.session.currentUser._id}`);
 });
 

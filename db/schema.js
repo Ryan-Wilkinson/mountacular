@@ -27,7 +27,7 @@ var UserSchema = new Schema({
 	lastName: String,
 	email: { type: String, required: true, unique: true },
 	username: { type: String, required: true, unique: true },
-	password: { type: String, required: true },
+	password_digest: { type: String, required: true },
 	mounts: [MountSchema],
 });
 
