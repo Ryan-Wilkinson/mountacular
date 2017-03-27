@@ -138,21 +138,21 @@ var hawk = new Mount ({
 	description: 'A majestic AF hawk that came to me and landed on my arm and said lets fucking ride'
 });
 
-// var blueBike = new Mount ({
-// 	name: 'Blue Bike',
-// 	spellId: 1,
-// 	creatureId: 1872364,
-// 	itemId: 13489257,
-// 	qualityId: 9,
-// 	icon: 'http://www.bcbsnc.com/assets/campaigns/public/gonc/images/9234-bike.jpg',
-// 	isGround: true,
-// 	isFlying: false,
-// 	isAquatic: false,
-// 	isJumping: true,  // blizzard api ends here
-// 	foundAt: 'The neighborhood junkyard',
-// 	obtainedHow: 'Stole that shit',
-// 	description: 'A rusty old blue bike that a I found at the junkyard, surprisingly both tires had air. Really fun riding around and jumping curbs'
-// });
+var tigerS = new Mount ({
+	name: 'Tiger',
+	spellId: 8,
+	creatureId: 1872371,
+	itemId: 13489263,
+	qualityId: 63,
+	icon: 'http://brain-on-fire.com/jefeblog/wp-content/uploads/2011/07/tigerwearingsaddle.jpg',
+	isGround: true,
+	isFlying: false,
+	isAquatic: false,
+	isJumping: true,  // blizzard api ends here
+	foundAt: 'A golf course',
+	obtainedHow: 'Pulled a thorn out of his paw',
+	description: 'A giant tiger with a saddle. Definitely not a frosted flakes mascot'
+});
 
 // var blueBike = new Mount ({
 // 	name: 'Blue Bike',
@@ -221,6 +221,10 @@ hawk.save(function(err) {
   console.log('Hawk created');
 });
 
+tigerS.save(function(err) {
+  if (err) console.log(err);
+  console.log('Tiger created');
+});
 
 
 
