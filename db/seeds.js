@@ -77,7 +77,7 @@ var giantSnake = new Mount ({
 var tRex = new Mount ({
 	name: 'T-Rex',
 	spellId: 4,
-	creatureId: 187237,
+	creatureId: 1872367,
 	itemId: 13489260,
 	qualityId: 1000,
 	icon: 'https://s-media-cache-ak0.pinimg.com/564x/3c/79/e0/3c79e0c936fee27b3f158e11034d132d.jpg',
@@ -90,21 +90,21 @@ var tRex = new Mount ({
 	description: 'A motha fuckin t rex, holy shit.'
 });
 
-// var blueBike = new Mount ({
-// 	name: 'Blue Bike',
-// 	spellId: 1,
-// 	creatureId: 1872364,
-// 	itemId: 13489257,
-// 	qualityId: 9,
-// 	icon: 'http://www.bcbsnc.com/assets/campaigns/public/gonc/images/9234-bike.jpg',
-// 	isGround: true,
-// 	isFlying: false,
-// 	isAquatic: false,
-// 	isJumping: true,  // blizzard api ends here
-// 	foundAt: 'The neighborhood junkyard',
-// 	obtainedHow: 'Stole that shit',
-// 	description: 'A rusty old blue bike that a I found at the junkyard, surprisingly both tires had air. Really fun riding around and jumping curbs'
-// });
+var blueDragon = new Mount ({
+	name: 'Blue Dragon',
+	spellId: 5,
+	creatureId: 1872368,
+	itemId: 13489261,
+	qualityId: 99,
+	icon: 'https://s-media-cache-ak0.pinimg.com/736x/61/93/10/619310c9dc117e7395c6cd6570de3825.jpg',
+	isGround: true,
+	isFlying: true,
+	isAquatic: false,
+	isJumping: true,  // blizzard api ends here
+	foundAt: 'On a Snowy Hilltop',
+	obtainedHow: 'Became best buds',
+	description: 'A giant blue dragon that eats shit.'
+});
 
 // var blueBike = new Mount ({
 // 	name: 'Blue Bike',
@@ -191,9 +191,9 @@ blueBike.save(function(err) {
   console.log('Blue Bike created');
 });
 
-tRex.save(function(err) {
+giantCock.save(function(err) {
   if (err) console.log(err);
-  console.log('T-Rex created');
+  console.log('Giant Cock created');
 });
 
 giantSnake.save(function(err) {
@@ -201,7 +201,12 @@ giantSnake.save(function(err) {
   console.log('Giant Snake created');
 });
 
-giantCock.save(function(err) {
+tRex.save(function(err) {
   if (err) console.log(err);
-  console.log('Giant Cock created');
+  console.log('T-Rex created');
+});
+
+blueDragon.save(function(err) {
+  if (err) console.log(err);
+  console.log('Blue Dragon created');
 });
