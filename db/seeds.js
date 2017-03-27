@@ -154,21 +154,21 @@ var tigerS = new Mount ({
 	description: 'A giant tiger with a saddle. Definitely not a frosted flakes mascot'
 });
 
-// var blueBike = new Mount ({
-// 	name: 'Blue Bike',
-// 	spellId: 1,
-// 	creatureId: 1872364,
-// 	itemId: 13489257,
-// 	qualityId: 9,
-// 	icon: 'http://www.bcbsnc.com/assets/campaigns/public/gonc/images/9234-bike.jpg',
-// 	isGround: true,
-// 	isFlying: false,
-// 	isAquatic: false,
-// 	isJumping: true,  // blizzard api ends here
-// 	foundAt: 'The neighborhood junkyard',
-// 	obtainedHow: 'Stole that shit',
-// 	description: 'A rusty old blue bike that a I found at the junkyard, surprisingly both tires had air. Really fun riding around and jumping curbs'
-// });
+var hellCrab = new Mount ({
+	name: 'Hell Crab',
+	spellId: 9,
+	creatureId: 1872372,
+	itemId: 13489264,
+	qualityId: 999,
+	icon: 'https://cdnb.artstation.com/p/assets/images/images/004/384/571/large/kurt-papstein-hellcrab-mount-front.jpg?1483245408',
+	isGround: true,
+	isFlying: false,
+	isAquatic: true,
+	isJumping: true,  // blizzard api ends here
+	foundAt: 'Goo Lagoon',
+	obtainedHow: 'He was being bullied by other crabs',
+	description: 'A sweet ass teal crab from hell who was born larger than his brothers and sisters and as of such was constantly picked on because of it.'
+});
 
 // var blueBike = new Mount ({
 // 	name: 'Blue Bike',
@@ -226,6 +226,10 @@ tigerS.save(function(err) {
   console.log('Tiger created');
 });
 
+hellCrab.save(function(err) {
+  if (err) console.log(err);
+  console.log('Hell Crab created');
+});
 
 
 
