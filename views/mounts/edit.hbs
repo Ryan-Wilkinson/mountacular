@@ -1,0 +1,42 @@
+<h5>Update Mount</h5>
+<br>
+<form action="/users/{{user.id}}/mounts/{{mount.id}}?_method=PUT" method="POST">
+	<div>
+		<label for="name">Name: </label><Br>
+		<input type="text" name="name" value="{{mount.name}}">
+	</div>
+	<div>
+		<label for="location">Location: </label><br>
+		<input type="text" name="location" value="{{mount.qualityId}}">
+	</div>
+	<div>
+		<label for="type">Type: </label><br>
+		<input type="text" name="type" value="{{restaurant.type}}">
+	</div>
+	<div>
+		<label for="imgUrl">Image URL:</label><br>
+		<input type="text" name="imgUrl" value="{{restaurant.imgUrl}}">
+	</div>
+	<div>
+		<label for="description">Description:</label><br>
+		<input type="text" name="description" value="{{restaurant.description}}">
+	</div>
+	<div>
+		<label for="description">Food Type:</label><br>
+		<input type="text" name="food" value="{{restaurant.food}}">
+	</div>
+
+
+<br>
+	<div>
+		<input class="btn btn-warning" type="submit" value="Update Restaurant">
+	</div>
+</form>
+
+<form action="/users/{{user.id}}/restaurants/{{restaurant.id}}?_method=DELETE" method="POST">
+	<input class="btn btn-danger" type="submit" value="Delete This">
+</form>
+
+</div>
+
+</div>
