@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
-var Mount = require("./models/mountModel.js");
-var User = require("./models/userModel.js");
+var Mount = require("../models/mountModel.js");
+var User = require("../models/userModel.js");
 
 mongoose.promise = global.Promise;
 
@@ -10,7 +10,7 @@ if (process.env.MONGODB_URI) {
   mongoose.connect(process.env.MONGODB_URI);
 }
 else {
-  mongoose.connect('mongodb://localhost/project-2');
+  mongoose.connect('mongodb://localhost/mountacular');
 }
 mongoose.connection.on('error', function(err) {
   console.error('MongoDB connection error: ' + err);
@@ -19,7 +19,7 @@ mongoose.connection.on('error', function(err) {
 );
 mongoose.connection.once('open', function() {
   console.log("Mongoose has connected to MongoDB!");
-});
+})
 
 // clear before re seed
 Mount.remove({}, function(err) {
@@ -27,7 +27,7 @@ Mount.remove({}, function(err) {
 });
 
 var blueBike = new Mount ({
-	name: Blue Bike,
+	name: 'Blue Bike',
 	spellId: 1,
 	creatureId: 1872364,
 	itemId: 13489257,
@@ -37,7 +37,7 @@ var blueBike = new Mount ({
 	isFlying: false,
 	isAquatic: false,
 	isJumping: true,  // blizzard api ends here
-	dateObtained: Date,
+	dateObtained: ,
 	foundAt: 'The neighborhood junkyard',
 	obtainedHow: 'Stole that shit',  // found/purchased/stole etc.
 	description: 'A rusty old blue bike that a I found at the junkyard, surprisingly both tires had air. Really fun riding around and jumping curbs'
