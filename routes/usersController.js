@@ -1,5 +1,5 @@
 var express = require('express');
-var router = express.Router();
+var router = express.Router({mergeParams: true});
 var User = require("../models/userModel.js");
 var Mount = require("../models/mountModel.js");
 
@@ -22,6 +22,7 @@ router.post("/", function(req, res) {
 	user.save(function(err, user) {
 		if (err) { console.log(err); }
 		console.log(user);
+		console.log(req.session.currentUser);
 		res.redirect("/sessions/login");
 	});
 });
