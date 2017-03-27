@@ -106,21 +106,21 @@ var blueDragon = new Mount ({
 	description: 'A giant blue dragon that eats shit.'
 });
 
-// var blueBike = new Mount ({
-// 	name: 'Blue Bike',
-// 	spellId: 1,
-// 	creatureId: 1872364,
-// 	itemId: 13489257,
-// 	qualityId: 9,
-// 	icon: 'http://www.bcbsnc.com/assets/campaigns/public/gonc/images/9234-bike.jpg',
-// 	isGround: true,
-// 	isFlying: false,
-// 	isAquatic: false,
-// 	isJumping: true,  // blizzard api ends here
-// 	foundAt: 'The neighborhood junkyard',
-// 	obtainedHow: 'Stole that shit',
-// 	description: 'A rusty old blue bike that a I found at the junkyard, surprisingly both tires had air. Really fun riding around and jumping curbs'
-// });
+var polarBear = new Mount ({
+	name: 'Polar Bear',
+	spellId: 6,
+	creatureId: 1872369,
+	itemId: 13489262,
+	qualityId: 101,
+	icon: 'http://wowtcglootcards.com/images/big_blizzard_bear_wow_mount_loot_small.jpg',
+	isGround: true,
+	isFlying: false,
+	isAquatic: true,
+	isJumping: true,  // blizzard api ends here
+	foundAt: 'North Pole',
+	obtainedHow: 'Raised him from a small cub',
+	description: 'Not your everyday coke drinking polar bear'
+});
 
 // var blueBike = new Mount ({
 // 	name: 'Blue Bike',
@@ -210,3 +210,20 @@ blueDragon.save(function(err) {
   if (err) console.log(err);
   console.log('Blue Dragon created');
 });
+
+polarBear.save(function(err) {
+  if (err) console.log(err);
+  console.log('Polar Bear created');
+});
+
+
+
+
+
+
+
+
+
+
+
+
