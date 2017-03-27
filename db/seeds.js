@@ -122,21 +122,21 @@ var polarBear = new Mount ({
 	description: 'Not your everyday coke drinking polar bear'
 });
 
-// var blueBike = new Mount ({
-// 	name: 'Blue Bike',
-// 	spellId: 1,
-// 	creatureId: 1872364,
-// 	itemId: 13489257,
-// 	qualityId: 9,
-// 	icon: 'http://www.bcbsnc.com/assets/campaigns/public/gonc/images/9234-bike.jpg',
-// 	isGround: true,
-// 	isFlying: false,
-// 	isAquatic: false,
-// 	isJumping: true,  // blizzard api ends here
-// 	foundAt: 'The neighborhood junkyard',
-// 	obtainedHow: 'Stole that shit',
-// 	description: 'A rusty old blue bike that a I found at the junkyard, surprisingly both tires had air. Really fun riding around and jumping curbs'
-// });
+var hawk = new Mount ({
+	name: 'Hawk',
+	spellId: 7,
+	creatureId: 1872370,
+	itemId: 13489262,
+	qualityId: 29,
+	icon: 'https://colltales.files.wordpress.com/2011/08/picture-14.png?w=474',
+	isGround: false,
+	isFlying: true,
+	isAquatic: false,
+	isJumping: true,  // blizzard api ends here
+	foundAt: 'Backyard',
+	obtainedHow: 'He found me',
+	description: 'A majestic AF hawk that came to me and landed on my arm and said lets fucking ride'
+});
 
 // var blueBike = new Mount ({
 // 	name: 'Blue Bike',
@@ -215,6 +215,24 @@ polarBear.save(function(err) {
   if (err) console.log(err);
   console.log('Polar Bear created');
 });
+
+hawk.save(function(err) {
+  if (err) console.log(err);
+  console.log('Hawk created');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
