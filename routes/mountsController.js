@@ -25,7 +25,6 @@ router.post('/', function(req, res) {
 		});
 });
 
-
 // GET EDIT MOUNT
 router.get('/:id/edit', function(req, res) {
 	User.findById(req.params.userId)
