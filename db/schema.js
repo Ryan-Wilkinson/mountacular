@@ -34,7 +34,7 @@ var UserSchema = new Schema({
 	mounts: [MountSchema]
 });
 
-//SAVE USER SCHEMA
+// PRE SEED DATA FOR NEW USERS, NOT THAT CLEAN WILL DRY UP LATER
 UserSchema.pre('save', function(next) {	
 	if(this.isNew) {
 
@@ -201,7 +201,7 @@ UserSchema.pre('save', function(next) {
 	this.mounts = [blueBike, giantCock, giantSnek, tRex, blueDragon, polarBear, hawk, tigerS, hellCrab, giantShark]
 
 	}
-
+//SAVE USER SCHEMA
   now = new Date();
   this.updated_at = now;
 
