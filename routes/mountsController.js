@@ -27,33 +27,33 @@ router.post('/', function(req, res) {
 
 
 // GET EDIT MOUNT
-// router.get('/:id/edit', function(req, res) {
-// 	User.findById(req.params.userId)
-//        .exec(function(err, user) {
-//          if (err) { console.log("not authorized"); }
+router.get('/:id/edit', function(req, res) {
+	User.findById(req.params.userId)
+       .exec(function(err, user) {
+         if (err) { console.log("not authorized"); }
 
-// 	Mount.findById(req.params.id)
-// 		.exec(function(err, mount) {
-// 			if (err) { console.log(err); }
-// 			res.render('mounts/edit', {
-// 				mount: mount,
-// 				user: user
-// 			});
-// 		});
-// 	});
-// });
-
-// TEST EDIT MOUNT GET PAGE
-router.get("/:id/edit", function(req, res) {
 	Mount.findById(req.params.id)
 		.exec(function(err, mount) {
 			if (err) { console.log(err); }
-			res.render("mounts/edit", {
+			res.render('mounts/edit', {
 				mount: mount,
-				user: req.params.userId
+				user: user
+			});
 		});
 	});
 });
+
+// TEST EDIT MOUNT GET PAGE
+// router.get("/:id/edit", function(req, res) {
+// 	Mount.findById(req.params.id)
+// 		.exec(function(err, mount) {
+// 			if (err) { console.log(err); }
+// 			res.render("mounts/edit", {
+// 				mount: mount,
+// 				user: req.params.userId
+// 		});
+// 	});
+// });
 
 // users.mounts.id(req.params.id) //mount id
 
