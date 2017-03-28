@@ -9,14 +9,12 @@
 	<li><b>Location: </b> {{foundAt}}</li>
 	<li><b>Obtained Via: </b> {{obtainedHow}}</li>
 	<li><b>Description: </b> {{description}}</li>
-	<form action="/users/{{../user.id}}/mounts/{{id}}?_method=DELETE" method="delete">
-	<input type="submit" value="Delete Mount">
 {{/each}}
 </div>
 
 
 <h3>Add A New Mount</h3>
-<br>
+
 <form action="/users/{{user.id}}/mounts" method="POST">
 	<div>
 		<label for="name">Name: </label><Br>

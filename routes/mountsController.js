@@ -43,18 +43,6 @@ router.get('/:id/edit', function(req, res) {
 	});
 });
 
-// TEST EDIT MOUNT GET PAGE
-// router.get("/:id/edit", function(req, res) {
-// 	Mount.findById(req.params.id)
-// 		.exec(function(err, mount) {
-// 			if (err) { console.log(err); }
-// 			res.render("mounts/edit", {
-// 				mount: mount,
-// 				user: req.params.userId
-// 		});
-// 	});
-// });
-
 // users.mounts.id(req.params.id) //mount id
 
 // TEST UPDATE MOUNT ROUTE
@@ -88,7 +76,7 @@ router.put('/:id', function(req, res) {
   User.findById(req.params.id)
     .exec(function(err, user) {
       if (err) {console.log('user search error ' + err);}
-      var editMount = user.mounts.id(req.params.mountsId);
+      var editMount = user.mounts.id(req.params.id);
 		editMount.name = req.body.name;
 		editMount.foundAt = req.body.foundAt;
 		editMount.obtainedHow = req.body.obtainedHow;
@@ -101,20 +89,6 @@ router.put('/:id', function(req, res) {
     });
 });
 
-// UPDATE THE MOUNT EDITS
-// router.post('/:id', function(req, res) {
-// 	Mount.findByIdAndUpdate(req.params.id)
-// 		.exec(function(err, mount) {
-// 			if (err) { console.log(err); }
-// 			mount.name = req.body.name;
-// 			mount.foundAt = req.body.foundAt;
-// 			mount.obtainedHow = req.body.obtainedHow;
-// 			mount.description = req.body.description;
-// 			mount.icon = req.body.icon;
-// 			mount.save();
-// 			res.redirect(`/users/${req.params.userId}`);
-// 		});
-// });
 
 // DELETE THE MOUNT
 router.delete("/:id", function(req, res) {
@@ -127,7 +101,7 @@ router.delete("/:id", function(req, res) {
 			if (err) { console.log(err); }
 		});
 	Mount.findByIdAndRemove(req.params.id)
-		.exec(function(err) {
+		.exec(function(err, mounts) {
 			if (err) { console.log(err); }
 			res.redirect(`/users/${req.params.userId}`);
 		});
