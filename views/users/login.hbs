@@ -1,12 +1,22 @@
-<h1><a href='/'>Mountacular</a></h1><br>
-<form class='loginForm' action="/sessions/login" method="post">
-  <div class='loginFormDiv'>
-    <label class= "loginLabel" for="email">Email: </label>
+<div id="nav_bar">
+  <div class='leftNav'>
+    <div class="homeLogo"><a href='/'><img class='achieve'src="https://s3.amazonaws.com/achgenwow/t/n_sKV0skZu.png"></a></div>
+  </div>
+  <div class='rightNav'>
+    <span><a href='/about'>/About/</a></span>
+    <span><a href="/users/createaccount">/Create Account/</a></span>
+  </div>
+</div>
+
+<h1>Login</h1><br>
+<form action="/sessions/login" method="post">
+  <div>
+    <label for="email">Email: </label>
     <input type="text" name="email">
   </div>
 
-  <div class='loginFormDiv'>
-    <label class= "loginLabel" for="password">Password: </label>
+  <div>
+    <label for="password">Password: </label>
     <input type="text" name="password">
   </div>
 
