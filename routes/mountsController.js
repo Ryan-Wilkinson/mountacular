@@ -43,38 +43,11 @@ router.get('/:id/edit', function(req, res) {
 	});
 });
 
-// users.mounts.id(req.params.id) //mount id
-
-// TEST UPDATE MOUNT ROUTE
-// router.put("/:id", function(req, res) {
-// 	Mount.findById(req.params.id)
-// 		.exec(function(err, mount) {
-// 			if (err) { console.log(err); }
-// 			mount.name = req.body.name;
-// 			mount.foundAt = req.body.foundAt;
-// 			mount.obtainedHow = req.body.obtainedHow;
-// 			mount.description = req.body.description;
-// 			mount.icon = req.body.icon;
-// 			mount.save();
-// 		});
-// 	User.findById(req.params.userId)
-// 		.exec(function(err, user) {
-// 			if (err) { console.log(err); }
-// 			var editMount = user.mounts.id(req.params.id);
-// 			editMount.name = req.body.name;
-// 			editMount.foundAt = req.body.foundAt;
-// 			editMount.obtainedHow = req.body.obtainedHow;
-// 			editMount.description = req.body.description;
-// 			editMount.icon = req.body.icon;
-// 			user.save();
-// 			res.redirect(`/users/${req.params.userId}`);
-// 		});
-// });
-
-// TEST V2
+// EDIT PUT ROUTE
 router.put('/:id', function(req, res) {
-  User.findById(req.params.id)
+  User.findById(req.params.userId)
     .exec(function(err, user) {
+    	console.log(user);
       if (err) {console.log('user search error ' + err);}
       var editMount = user.mounts.id(req.params.id);
 		editMount.name = req.body.name;
