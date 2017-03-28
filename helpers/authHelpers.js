@@ -13,12 +13,12 @@ function loginUser(req, res, next) {
 
   User.findOne({ email: email })
   .then(function(foundUser){
-    console.log(foundUser);
-    console.log("_________________")
-    console.log(password)
-    console.log(foundUser.password_digest)
-    console.log(bcrypt.compareSync(password, foundUser.password_digest))
-    console.log("_________________")
+    // console.log(foundUser);
+    // console.log("_________________")
+    // console.log(password)
+    // console.log(foundUser.password_digest)
+    // console.log(bcrypt.compareSync(password, foundUser.password_digest))
+    // console.log("_________________")
     if (foundUser == null) {
       res.json({status: 401, data: "unauthorized"});
 

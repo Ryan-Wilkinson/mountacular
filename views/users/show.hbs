@@ -2,17 +2,51 @@
 <h1> Hello {{user.username}}!</h1>
 
 <div>
- {{#each mount}}
-	<li><a href="/users/{{../user.id}}/mounts/{{this.id}}/edit"><img src="{{this.icon}}" alt="Mount Image"></a></li>
-	<li><h3>{{this.name}}</h3></li>
-<!-- 	<li><b>Quaility: </b>{{this.qualityId}}</li>
-	<li><b>Ground Mount?: </b>{{this.isGround}}</li>
-	<li><b>Flying?: </b>{{this.isFlying}}</li>
-	<li><b>Aquatic?: </b>{{this.isAquatic}}</li>
-	<li><b>Can it Jump?: </b>{{this.isJumping}}</li> -->
-	<li><b>Date Obtained: </b> {{this.dateObtained}}</li>
-	<li><b>Location: </b> {{this.foundAt}}</li>
-	<li><b>Obtained Via: </b> {{this.obtainedHow}}</li>
-	<li><b>Description: </b> {{this.description}}</li>
+ {{#each user.mounts}}
+	<li><a href="/users/{{../user.id}}/mounts/{{id}}/edit"><img src="{{icon}}" alt="Mount Image"></a></li>
+	<li><h3>{{name}}</h3></li>
+	<li><b>Date Obtained: </b> {{dateObtained}}</li>
+	<li><b>Location: </b> {{foundAt}}</li>
+	<li><b>Obtained Via: </b> {{obtainedHow}}</li>
+	<li><b>Description: </b> {{description}}</li>
 {{/each}}
 </div>
+
+
+<h3>Add A New Mount</h3>
+<br>
+<form action="/users/{{user.id}}/mounts" method="POST">
+	<div>
+		<label for="name">Name: </label><Br>
+		<input type="text" name="name" value="{{mount.name}}">
+	</div>
+	<div>
+		<label for="foundAt">Location: </label><br>
+		<input type="text" name="foundAt" value="{{mount.foundAt}}">
+	</div>
+	<div>
+		<label for="obtainedHow">Obtained: </label><br>
+		<input type="text" name="obtainedHow" value="{{mount.obtainedHow}}">
+	</div>
+	<div>
+		<label for="icon">Icon Url: </label><br>
+		<input type="text" name="icon" value="{{mount.icon}}">
+	</div>
+	<div>
+		<label for="description">Description: </label><br>
+		<input type="text" name="description" value="{{mount.description}}">
+	</div>
+	<div>
+		<input class="btn btn-primary" type="submit" value="Create Mount">
+	</div>
+</form>
+
+<!-- <ul>
+  {{#each user.mounts}}
+    Mount Name: {{name}}
+    <a href="/users/{{../user.id}}/mounts/{{id}}/edit">Edit This Mount</a>
+    <form action="/users/{{../user.id}}/mounts/{{id}}?_method=DELETE" method="post">
+      <input type="submit" value="Delete Item">
+    </form>
+  {{/each}}
+</ul> -->
