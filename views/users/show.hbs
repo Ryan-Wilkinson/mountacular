@@ -27,9 +27,10 @@
 </ul>
 
 
+<div class="createNewContainer">
 <h3>Add A New Mount</h3>
 
-<form action="/users/{{user.id}}/mounts" method="POST">
+<form action="/users/{{user.id}}/mounts" method="POST" class="newMountForm">
 	<div>
 		<label for="name">Name: </label><Br>
 		<input type="text" name="name" value="{{mount.name}}">
@@ -54,4 +55,4 @@
 		<input class="btn btn-primary" type="submit" value="Create Mount">
 	</div>
 </form>
-
+</div>

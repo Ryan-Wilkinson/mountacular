@@ -139,9 +139,29 @@ ul {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	border-bottom: 10px solid black;
 }
 
 .mountPic {
 	height: 100px;
 	width: 120px;
+}
+
+.createNewContainer {
+	margin-bottom: 50px;
+}
+
+.newMountForm {
+	display: flex;
+	height: 600px;
+	width: 400px;
+	margin: 0 auto;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-around;
+	font-size: 20px;
+	border: 2px solid white;
+	background-color: rgba(0,0,0,0.7);
 }
