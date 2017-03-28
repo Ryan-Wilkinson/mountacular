@@ -30,14 +30,14 @@ User.remove({}, function(err) {
 //     console.log(err);
 // });
 
-var user = new User ({
-	firstName: "Charles",
-	lastName: "Wilkinson",
-	email: { type: "aol@aol.com", required: true, unique: true },
-	username: { type: "cow", required: true, unique: true },
-	password_digest: "password",
-	mounts: [MountSchema]
-})
+// var user = new User ({
+// 	firstName: "Charles",
+// 	lastName: "Wilkinson",
+// 	email: { type: "aol@aol.com", required: true, unique: true },
+// 	username: { type: "cow", required: true, unique: true },
+// 	password_digest: "password",
+// 	mounts: [MountSchema]
+// })
 
 var blueBike = new Mount ({
 	name: 'Blue Bike',
