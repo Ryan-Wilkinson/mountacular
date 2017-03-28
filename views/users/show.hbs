@@ -1,11 +1,18 @@
-<h1><a href='/'>Mountacular</a></h1>
-<form method="post" action="/sessions?_method=DELETE">
-<input type="submit" value="Logout">
-<br>
+<div id="nav_bar">
+	<div class='leftNav'>
+		<div class="homeLogo"><a href='/'><img class='achieve'src="https://s3.amazonaws.com/achgenwow/t/n_sKV0skZu.png"></a></div>
+	</div>
+	<div class='rightNav'>
+		<span><a href='/about'>/About/</a></span>
+		<span class='spanLogout'><form class='logoutButton' method="post" action="/sessions?_method=DELETE">
+		<input class='logoutButton' type="submit" value="/Logout/"></span>
+	</div>
+</div>
 
 <h1> Hello {{user.username}}!</h1>
 
 <div>
+<ul>
  {{#each user.mounts}}
 	<li><a href="/users/{{../user.id}}/mounts/{{id}}/edit"><img src="{{icon}}" alt="Mount Image"></a></li>
 	<li><h3>{{name}}</h3></li>
@@ -14,6 +21,7 @@
 	<li><b>Obtained Via: </b> {{obtainedHow}}</li>
 	<li><b>Description: </b> {{description}}</li>
 {{/each}}
+</ul>
 </div>
 
 

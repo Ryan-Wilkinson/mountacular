@@ -1,8 +1,52 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  	text-align: center;
+  	display:flex;
+	flex-direction: column;
 }
 
-a {
-  color: #00B7FF;
+#nav_bar {
+	display: flex;
+	justify-content: space-between;
+	background: url("http://www.kanhangadvartha.com/data/out/100/IMG_57546.gif");
+	padding: 0 100px 0 100px;
+	height: 50px;
+}
+
+.loginFormDiv {
+	display: flex;
+	align-content: center;
+}
+
+.loginForm {
+	margin: 0 auto;
+	align-items: center;
+}
+
+.rightNav {
+	display: flex;
+}
+
+.leftNav {
+	color: white;
+}
+
+.homeLogo {
+	padding-bottom: 25px;
+}
+
+span {
+	padding: 5px;
+	padding-top: 13px;
+}
+
+.logoutButton {
+	color: #2196f3;
+	background: transparent;
+	border-color: transparent;
+	border: none;
+}
+
+.achieve {
+	height: 53px;
+	width: 180px;
 }
