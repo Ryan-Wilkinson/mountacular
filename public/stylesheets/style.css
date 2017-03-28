@@ -118,27 +118,26 @@ span {
 	flex-direction: column;
 	justify-content: space-around;
 	padding-bottom: 10px;
-	padding-top: 10px;
 	font-size: 20px;
 	border: 2px solid white;
 	background-color: rgba(0,0,0,0.7);
+	margin: 20px;
 }
 
-.fullEachMount {
+/*.fullEachMount {
 	margin: 0 auto;
 	display: flex;
     flex-direction: column;
     justify-content: space-around;
-/*    justify-content: center;
-    align-items: center;*/
-/*    float: left;
-    padding: 39px;*/
-}
+    justify-content: center;
+    align-items: center;
+    float: left;
+    padding: 39px;
+}*/
 
 ul {
 	display: flex;
-	justify-content: space-around;
-	align-items: left;
+	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
