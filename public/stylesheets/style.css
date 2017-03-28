@@ -104,5 +104,45 @@ span {
 /*================================== */
 
 /* User Mount For Each Shit */
+.eachMount li b {
+	border-bottom: 2px solid white;
+}
 
+.eachMount {
+	display: flex;
+	align-content: left;
+	height: 450px;
+	width: 400px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	font-size: 20px;
+	border: 2px solid white;
+	background-color: rgba(0,0,0,0.7);
+}
 
+.fullEachMount {
+	margin: 0 auto;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+/*    justify-content: center;
+    align-items: center;*/
+/*    float: left;
+    padding: 39px;*/
+}
+
+ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: left;
+	flex-wrap: wrap;
+}
+
+.mountPic {
+	height: 100px;
+	width: 120px;
+}
