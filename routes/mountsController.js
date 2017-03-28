@@ -31,23 +31,21 @@ router.get('/:id/edit', function(req, res) {
 	User.findById(req.params.userId)
        .exec(function(err, user) {
          if (err) { console.log("not authorized"); }
-
-	Mount.findById(req.params.id)
-		.exec(function(err, mount) {
-			if (err) { console.log(err); }
+         var mount = user.mounts.id(req.params.id);
+	// Mount.findById(req.params.id)
+	// 	.exec(function(err, mount) {
+	// 		if (err) { console.log(err); }
 			res.render('mounts/edit', {
 				mount: mount,
 				user: user
 			});
 		});
 	});
-});
 
 // EDIT PUT ROUTE
 router.put('/:id', function(req, res) {
   User.findById(req.params.userId)
     .exec(function(err, user) {
-    	console.log(user);
       if (err) {console.log('user search error ' + err);}
       var editMount = user.mounts.id(req.params.id);
 		editMount.name = req.body.name;
@@ -79,9 +77,6 @@ router.delete("/:id", function(req, res) {
 			res.redirect(`/users/${req.params.userId}`);
 		});
 });
-
-
-
 
 
 
