@@ -153,8 +153,9 @@ ul {
 
 .newMountForm {
 	display: flex;
-	height: 600px;
+	height: 550px;
 	width: 400px;
+	padding-bottom: 20px;
 	margin: 0 auto;
 	border-radius: 10px;
 	display: flex;
