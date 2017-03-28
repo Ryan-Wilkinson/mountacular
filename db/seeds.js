@@ -21,10 +21,23 @@ mongoose.connection.once('open', function() {
   console.log("Mongoose has connected to MongoDB!");
 })
 
-// clear before re seed
-Mount.remove({}, function(err) {
+User.remove({}, function(err) {
     console.log(err);
-});
+ });
+
+// clear before re seed
+// Mount.remove({}, function(err) {
+//     console.log(err);
+// });
+
+var user = new User ({
+	firstName: "Charles",
+	lastName: "Wilkinson",
+	email: { type: "aol@aol.com", required: true, unique: true },
+	username: { type: "cow", required: true, unique: true },
+	password_digest: "password",
+	mounts: [MountSchema]
+})
 
 var blueBike = new Mount ({
 	name: 'Blue Bike',
@@ -186,7 +199,7 @@ var giantShark = new Mount ({
 	description: 'A deep sea giant, the king of the depths. Ah who am I kidding, hes just a big ass shark who lost to me in a fight.'
 });
 
-blueBike.save(function(err) {
+User.save(function(err) {
   if (err) console.log(err);
   console.log('Blue Bike created');
 });

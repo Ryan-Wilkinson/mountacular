@@ -11,18 +11,18 @@
 
 <h1> Hello {{user.username}}!</h1>
 
-<div>
 <ul>
  {{#each user.mounts}}
+ 	<li><h3>{{name}}</h3></li>
+ <div class="eachMount">
 	<li><a href="/users/{{../user.id}}/mounts/{{id}}/edit"><img src="{{icon}}" alt="Mount Image"></a></li>
-	<li><h3>{{name}}</h3></li>
 	<li><b>Date Obtained: </b> {{dateObtained}}</li>
 	<li><b>Location: </b> {{foundAt}}</li>
 	<li><b>Obtained Via: </b> {{obtainedHow}}</li>
 	<li><b>Description: </b> {{description}}</li>
+</div>
 {{/each}}
 </ul>
-</div>
 
 
 <h3>Add A New Mount</h3>
