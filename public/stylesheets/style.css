@@ -188,5 +188,32 @@ ul {
 	font-size: 20px;
 	border: 2px solid white;
 	background-color: rgba(0,0,0,0.6);
+	flex-wrap: wrap;
 }
+
+.showDivs {
+	justify-content: center;
+	display: flex;
+	width: 100%;
+}
+
+.showFont {
+	font-family: 'Kalam', cursive;
+	text-decoration: underline;
+}
+
+.mountNameShow {
+	font-family: 'Kalam', cursive;
+	font-size: 90px;
+}
+
+
+
+
+
+
+
+
+
+
 
