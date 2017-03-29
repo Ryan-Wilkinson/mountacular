@@ -137,16 +137,6 @@ span {
 	font-size: 90px;
 	text-shadow: 2px 2px black;
 }
-/*.fullEachMount {
-	margin: 0 auto;
-	display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    justify-content: center;
-    align-items: center;
-    float: left;
-    padding: 39px;
-}*/
 
 ul {
 	display: flex;
