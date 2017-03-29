@@ -3,7 +3,7 @@ body {
   	text-align: center;
   	display:flex;
 	flex-direction: column;
-	background: url("http://i.imgur.com/iApo4q6.png") center no-repeat fixed;
+	background: url("https://blenderartists.org/forum/attachment.php?attachmentid=361510&d=1423782678") center no-repeat fixed;
 	color: white;
 }
 /*================================== */
@@ -23,11 +23,13 @@ body {
 	background-color: rgba(0,0,0,0.7);
 	padding: 0 100px 0 100px;
 	height: 100px;
+	text-shadow: 2px 2px black;
 }
 
 .rightNav {
 	display: flex;
 	font-size: 20px;
+	text-shadow: 2px 2px black;
 }
 
 span a:hover {
@@ -50,6 +52,8 @@ span a:hover {
 p {
 	padding: 30px;
 	font-size: 25px;
+	text-shadow: 2px 2px black;
+	background-color: rgba(0,0,0,0.7);
 }
 
 .homeTitle {
@@ -57,6 +61,7 @@ p {
 	font-family: 'Tangerine', cursive;
 	font-size: 200px;
 	text-shadow: 3px 3px black;
+	color: #2196f3;
 }
 /*================================== */
 /*================================== */
@@ -82,9 +87,10 @@ p {
 }
 
 #loginTitle {
+	font-family: 'Raleway', sans-serif;
 	font-size: 90px;
-	font-family: 'Tangerine', cursive;
 	text-shadow: 2px 2px black;
+	color: #2196f3;
 }
 
 label {
@@ -136,6 +142,7 @@ span {
 	font-family: 'Raleway', sans-serif;
 	font-size: 90px;
 	text-shadow: 2px 2px black;
+	color: #2196f3;
 }
 
 ul {
@@ -214,9 +221,10 @@ ul {
 }
 
 .addANewMountTitle {
-	font-family: 'Tangerine', cursive;
+	font-family: 'Raleway', sans-serif;
 	font-size: 90px;
 	text-shadow: 2px 2px black;
+	color: #2196f3;
 }
 
 .blankSpace {
@@ -245,9 +253,10 @@ ul {
 }
 
 #signUpTitle {
+	font-family: 'Raleway', sans-serif;
 	font-size: 90px;
-	font-family: 'Tangerine', cursive;
 	text-shadow: 2px 2px black;
+	color: #2196f3;
 }
 
 /*================================== */
@@ -282,9 +291,10 @@ ul {
 }
 
 .editMountTitle {
-	font-family: 'Tangerine', cursive;
+	font-family: 'Raleway', sans-serif;
 	font-size: 90px;
 	text-shadow: 2px 2px black;
+	color: #2196f3;
 }
 
 .red {
@@ -299,6 +309,7 @@ ul {
 	font-family: 'Raleway', sans-serif;
 	font-size: 90px;
 	text-shadow: 2px 2px black;
+	color: #2196f3;
 }
 
 
