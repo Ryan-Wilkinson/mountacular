@@ -236,6 +236,52 @@ ul {
 	text-shadow: 2px 2px black;
 }
 
+/*================================== */
+/*================================== */
+/* MOUNT EDIT PAGE */
+
+.mountEditForm {
+	display: flex;
+	height: 600px;
+	width: 350px;
+	padding-top: 20px;
+	margin: 0 auto;
+	align-items: center;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-around;
+	font-size: 20px;
+	border: 2px solid white;
+	background-color: rgba(0,0,0,0.7);
+}
+
+.editMountButton {
+	padding-bottom: 20px;
+	font-size: 20px;
+}
+
+.editPageSplit {
+	padding-bottom: 50px;
+	border-bottom: 10px solid black;
+}
+
+.editMountTitle {
+	font-family: 'Tangerine', cursive;
+	font-size: 90px;
+	text-shadow: 2px 2px black;
+}
+
+.red {
+	padding-bottom: 20px;
+}
+
+
+
+
+
+
 
 
 

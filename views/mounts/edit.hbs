@@ -13,32 +13,35 @@
 
 <br>
 
-<div class="showPageContainer">
-	<div class="showIconDiv">
-		<img src="{{mount.icon}}" class="showIcon">
-	</div>
-	<div>
-		<h1 class="mountNameShow">{{mount.name}}</h1>
-	</div>
-	<div class="showDivs">
-		<div class="showFont">Date Obtained</div>- {{mount.dateObtained}}
-	</div>
-	<div class="showDivs">
-		<div class="showFont">Location</div>- {{mount.foundAt}}
-	</div>
-	<div class="showDivs">
-		<div class="showFont">Obtained How</div>-   {{mount.obtainedHow}}
-	</div>
-	<div class="showDivs">
-		<div class="showFont">Description</div>- {{mount.description}}
-	</div>
-</div>
+<div class="editPageSplit">
 
+	<div class="showPageContainer">
+		<div class="showIconDiv">
+			<img src="{{mount.icon}}" class="showIcon">
+		</div>
+		<div>
+			<h1 class="mountNameShow">{{mount.name}}</h1>
+		</div>
+		<div class="showDivs">
+			<div class="showFont">Date Obtained</div>- {{mount.dateObtained}}
+		</div>
+		<div class="showDivs">
+			<div class="showFont">Location</div>- {{mount.foundAt}}
+		</div>
+		<div class="showDivs">
+			<div class="showFont">Obtained How</div>-   {{mount.obtainedHow}}
+		</div>
+		<div class="showDivs">
+			<div class="showFont">Description</div>- {{mount.description}}
+		</div>
+	</div>
+
+</div>
 
 <br>
 
-
-<form action="/users/{{user.id}}/mounts/{{mount.id}}?_method=PUT" method="POST">
+<h1 class="editMountTitle">Edit Mount</h1>
+<form action="/users/{{user.id}}/mounts/{{mount.id}}?_method=PUT" method="POST" class="mountEditForm">
 	<div>
 		<label for="name">Name: </label><Br>
 		<input type="text" name="name" value="{{mount.name}}">
@@ -61,11 +64,15 @@
 	</div>
 
 <br>
-	<div>
-		<input type="submit" value="Update Mount" class="btn btn-danger">
+	<div class="editMountButton">
+		<input type="submit" value="Update Mount" class="btn btn-primary">
 	</div>
 </form>
 <br>
 	<form action="/users/{{user.id}}/mounts/{{mount.id}}?_method=DELETE" method="POST">
-	<input class="btn btn-danger" type="submit" value="Remove Mount">
+	<input class="waves-effect waves-light red accent-3 btn" type="submit" value="Remove Mount">
 </form>
+
+<br>
+
+
