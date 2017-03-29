@@ -170,3 +170,12 @@ ul {
 /*================================== */
 /* USER MOUNT SHOW PAGE BOYS */
 
+.showIcon {
+	height: 300px;
+	width: 400px;
+}
+
+.showPageContainer {
+	margin-top: 50px;
+}
+
