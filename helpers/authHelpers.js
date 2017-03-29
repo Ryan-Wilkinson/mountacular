@@ -19,7 +19,7 @@ function loginUser(req, res, next) {
     // console.log(foundUser.password_digest)
     // console.log(bcrypt.compareSync(password, foundUser.password_digest))
     // console.log("_________________")
-    if (foundUser == null) {
+    if (foundUser == null || !bcrypt.compareSync(password, foundUser.password_digest)) {
       res.json({status: 401, data: "unauthorized"});
 
     } else if (bcrypt.compareSync(password, foundUser.password_digest)) {
