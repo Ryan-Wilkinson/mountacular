@@ -28,7 +28,7 @@ Was a little ambitions with all of the relations between the pages, and greatly 
 ## Future Developments
 - Connect the Blizzard Mount API so a user can search by name to find the actual mounts from the game.
 - Add in a Back button on a few pages possibly.
-
+- Page Transitions
 
 
 
