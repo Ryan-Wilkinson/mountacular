@@ -6,25 +6,7 @@
 {{mount.description}}<br>
 
 
-
-
-
-
-
-
-
-
-
 <br>
-
-
-
-
-
-
-
-
-
 
 
 <form action="/users/{{user.id}}/mounts/{{mount.id}}?_method=PUT" method="POST">
@@ -51,10 +33,10 @@
 
 <br>
 	<div>
-		<input type="submit" value="Update Mount">
+		<input type="submit" value="Update Mount" class="btn btn-danger">
 	</div>
 </form>
-
+<br>
 <form action="/users/{{user.id}}/mounts/{{mount.id}}?_method=DELETE" method="POST">
 	<input class="btn btn-danger" type="submit" value="Remove Mount">
 </form>

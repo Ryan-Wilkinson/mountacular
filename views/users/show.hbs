@@ -32,24 +32,24 @@
 
 <form action="/users/{{user.id}}/mounts" method="POST" class="newMountForm">
 	<div>
-		<label for="name">Name: </label><Br>
-		<input type="text" name="name" value="{{mount.name}}">
+		<label for="name"></label><Br>
+		<input placeholder="Mount Name" type="text" name="name" value="{{mount.name}}">
 	</div>
 	<div>
-		<label for="foundAt">Location: </label><br>
-		<input type="text" name="foundAt" value="{{mount.foundAt}}">
+		<label for="foundAt"></label><br>
+		<input placeholder="Location" type="text" name="foundAt" value="{{mount.foundAt}}">
 	</div>
 	<div>
-		<label for="obtainedHow">Obtained: </label><br>
-		<input type="text" name="obtainedHow" value="{{mount.obtainedHow}}">
+		<label for="obtainedHow"></label><br>
+		<input placeholder="How It Was Obtained" type="text" name="obtainedHow" value="{{mount.obtainedHow}}">
 	</div>
 	<div>
-		<label for="icon">Icon Url: </label><br>
-		<input type="text" name="icon" value="{{mount.icon}}">
+		<label for="icon"></label><br>
+		<input placeholder="Icon Url" type="text" name="icon" value="{{mount.icon}}">
 	</div>
 	<div>
-		<label for="description">Description: </label><br>
-		<input type="text" name="description" value="{{mount.description}}">
+		<label for="description"></label><br>
+		<input placeholder="Description" type="text" name="description" value="{{mount.description}}">
 	</div>
 	<div>
 		<input class="btn btn-primary" type="submit" value="Create Mount">
