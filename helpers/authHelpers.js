@@ -7,6 +7,7 @@ function createSecure(req, res, next) {
   next();
 }
 
+// checks to see if there is a user logging in, and if the password matches the hashed password
 function loginUser(req, res, next) {
   var email = req.body.email;
   var password = req.body.password;
