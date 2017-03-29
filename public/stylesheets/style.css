@@ -50,7 +50,8 @@ p {
 .homeTitle {
 	padding: 1em;
 	font-family: 'Tangerine', cursive;
-	font-size: 140px;
+	font-size: 150px;
+	text-shadow: 2px 2px black;
 }
 /*================================== */
 /*================================== */
@@ -76,8 +77,9 @@ p {
 }
 
 #loginTitle {
-	color: black;
-	text-shadow: 1px .5px white;
+	font-size: 80px;
+	font-family: 'Tangerine', cursive;
+	text-shadow: 2px 2px black;
 }
 
 label {
@@ -229,8 +231,9 @@ ul {
 }
 
 #signUpTitle {
-	color: black;
-	text-shadow: 1px .5px white;
+	font-size: 80px;
+	font-family: 'Tangerine', cursive;
+	text-shadow: 2px 2px black;
 }
 
 
