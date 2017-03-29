@@ -77,7 +77,7 @@ p {
 }
 
 #loginTitle {
-	font-size: 80px;
+	font-size: 90px;
 	font-family: 'Tangerine', cursive;
 	text-shadow: 2px 2px black;
 }
@@ -209,6 +209,12 @@ ul {
 	font-size: 90px;
 }
 
+.addANewMountTitle {
+	font-family: 'Tangerine', cursive;
+	font-size: 90px;
+	text-shadow: 2px 2px black;
+}
+
 /*================================== */
 /*================================== */
 /* NEW USER SIGN UP PAGE */
@@ -231,7 +237,7 @@ ul {
 }
 
 #signUpTitle {
-	font-size: 80px;
+	font-size: 90px;
 	font-family: 'Tangerine', cursive;
 	text-shadow: 2px 2px black;
 }
@@ -277,7 +283,9 @@ ul {
 	padding-bottom: 20px;
 }
 
-
+/*================================== */
+/*================================== */
+/* ABOUT MOUNTACULAR */
 
 
 
