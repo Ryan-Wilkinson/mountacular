@@ -176,6 +176,17 @@ ul {
 }
 
 .showPageContainer {
-	margin-top: 50px;
+	height: 800px;
+	width: 900px;
+	margin: 0 auto;
+	align-items: center;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-around;
+	font-size: 20px;
+	border: 2px solid white;
+	background-color: rgba(0,0,0,0.6);
 }
 

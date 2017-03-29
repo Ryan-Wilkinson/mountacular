@@ -1,21 +1,36 @@
+<div id="nav_bar">
+	<div class='leftNav'>
+		<div class="homeLogo"><a href='/'><img class='achieve'src="https://s3.amazonaws.com/achgenwow/t/n_sKV0skZu.png"></a>
+		</div>
+	</div>
+	<div class='rightNav'>
+		<span><a href='/about'>/About/</a></span>
+		<span class='spanLogout'><form class='logoutButton' method="post" action="/sessions?_method=DELETE">
+		<input class='logoutButton' type="submit" value="/Logout/"></span>
+		</form>
+	</div>
+</div>
+
+<br>
+
 <div class="showPageContainer">
-	<div>
+	<div class="showIconDiv">
 		<img src="{{mount.icon}}" class="showIcon">
 	</div>
 	<div>
-		<h5>{{mount.name}}</h5>
+		<h1 class="mountNameShow">{{mount.name}}</h1>
 	</div>
 	<div>
-		{{mount.foundAt}}
+		<b class="showInfo">Date Obtained<b><span style="font-size: 30px;">:</span> {{mount.dateObtained}}
 	</div>
 	<div>
-		{{mount.obtainedHow}}
+		<b class="showInfo">Location</b><span style="font-size: 30px;">:</span> {{mount.foundAt}}
 	</div>
 	<div>
-		{{mount.description}}
+		<b class="showInfo">Obtained How</b><span style="font-size: 30px;">:</span> {{mount.obtainedHow}}
 	</div>
-	<div>
-		{{mount.description}}
+	<div class="showInfo">
+		<b class="showInfo">Description</b><span style="font-size: 30px;">:</span> {{mount.description}}
 	</div>
 </div>
 
