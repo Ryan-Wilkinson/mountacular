@@ -207,8 +207,31 @@ ul {
 	font-size: 90px;
 }
 
+/*================================== */
+/*================================== */
+/* NEW USER SIGN UP PAGE */
 
+.signUpForm {
+	display: flex;
+	height: 550px;
+	width: 350px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+	align-items: center;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-around;
+	font-size: 20px;
+	border: 2px solid white;
+	background-color: rgba(0,0,0,0.7);
+}
 
+#signUpTitle {
+	color: black;
+	text-shadow: 1px .5px white;
+}
 
 
 
