@@ -7,8 +7,6 @@ For my second project I made a mount collecting application for World of Warcraf
 ## Link to the Heroku Deployment
 [Mountacular](https://ancient-scrubland-11366.herokuapp.com/)
 
-## Link to the Github Repo
-[Github](https://github.com/Ryan-Wilkinson/mountacular)
 
 ## Trello Board
 [Mountacular Trello Flow](https://trello.com/b/c6M3guR9/second-project)
