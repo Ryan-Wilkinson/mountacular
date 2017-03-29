@@ -3,7 +3,7 @@ body {
   	text-align: center;
   	display:flex;
 	flex-direction: column;
-	background: url("https://blenderartists.org/forum/attachment.php?attachmentid=361510&d=1423782678") center no-repeat fixed;
+	background: url("https://blenderartists.org/forum/attachment.php?attachmentid=361510&d=1423782678") no-repeat center fixed;
 	color: white;
 }
 /*================================== */
@@ -177,6 +177,13 @@ ul {
 	border: 2px solid white;
 	background-color: rgba(0,0,0,0.7);
 
+}
+
+.userMountTracking {
+	font-family: 'Raleway', sans-serif;
+	font-size: 40px;
+	text-shadow: 2px 2px black;
+	color: #2196f3;
 }
 
 /*================================== */
