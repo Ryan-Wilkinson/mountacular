@@ -22,11 +22,12 @@ body {
 	justify-content: space-between;
 	background-color: rgba(0,0,0,0.7);
 	padding: 0 100px 0 100px;
-	height: 80px;
+	height: 100px;
 }
 
 .rightNav {
 	display: flex;
+	font-size: 20px;
 }
 
 .leftNav {
@@ -38,8 +39,8 @@ body {
 }
 
 .achieve {
-	height: 65px;
-	width: 220px;
+	height: 85px;
+	width: 295px;
 }
 
 p {
@@ -50,8 +51,8 @@ p {
 .homeTitle {
 	padding: 1em;
 	font-family: 'Tangerine', cursive;
-	font-size: 150px;
-	text-shadow: 2px 2px black;
+	font-size: 200px;
+	text-shadow: 3px 3px black;
 }
 /*================================== */
 /*================================== */
@@ -89,7 +90,7 @@ label {
 
 span {
 	padding: 5px;
-	padding-top: 28px;
+	padding-top: 35px;
 }
 
 .logoutButton {
@@ -123,6 +124,11 @@ span {
 	margin: 20px;
 }
 
+.userNameShow {
+	font-family: 'Raleway', sans-serif;
+	font-size: 90px;
+	text-shadow: 2px 2px black;
+}
 /*.fullEachMount {
 	margin: 0 auto;
 	display: flex;
@@ -287,7 +293,11 @@ ul {
 /*================================== */
 /* ABOUT MOUNTACULAR */
 
-
+.aboutMountacularTitle {
+	font-family: 'Raleway', sans-serif;
+	font-size: 90px;
+	text-shadow: 2px 2px black;
+}
 
 
 
