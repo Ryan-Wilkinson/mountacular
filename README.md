@@ -23,7 +23,7 @@ Was a little ambitions with all of the relations between the pages, and greatly 
 ![First Design Layout](http://i.imgur.com/hhpzDUO.jpg)
 
 ### Home-Page
-![Home-Page](http://i.imgur.com/naku4Aq.png)
+![Home-Page](http://i.imgur.com/JJVpayj.png)
 
 ## Future Developments
 - Connect the Blizzard Mount API so a user can search by name to find the actual mounts from the game.
