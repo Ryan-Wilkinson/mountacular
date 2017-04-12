@@ -27,11 +27,6 @@ mongoose.connection.once('open', function() {
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
-FS.identify('58e45dfb3329290011033bc6', {
- displayName: 'Test',
- email: 'test@test.com'
-});
-
 // Sessions stuff
 app.use(session({
   secret: "derpderpderpcats",
