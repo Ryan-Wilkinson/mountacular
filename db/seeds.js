@@ -51,7 +51,7 @@ var blueBike = new Mount ({
 	isAquatic: false,
 	isJumping: true,  // blizzard api ends here
 	foundAt: 'The neighborhood junkyard',
-	obtainedHow: 'Stole that shit',
+	obtainedHow: 'Stolen.',
 	description: 'A rusty old blue bike that a I found at the junkyard, surprisingly both tires had air. Really fun riding around and jumping curbs.'
 });
 
@@ -67,7 +67,7 @@ var giantchicken = new Mount ({
 	isAquatic: false,
 	isJumping: true,  // blizzard api ends here
 	foundAt: 'On the internet',
-	obtainedHow: 'Pooped it out',
+	obtainedHow: 'Found it.',
 	description: 'Giant robust, colorful, and regal chicken that I can ride around on and even fly for a short duration.'
 });
 
@@ -82,8 +82,8 @@ var giantsnake = new Mount ({
 	isFlying: false,
 	isAquatic: false,
 	isJumping: false,  // blizzard api ends here
-	foundAt: 'The Amazon Jungle Boi',
-	obtainedHow: 'Tamed his ass',
+	foundAt: 'The Amazon Jungle',
+	obtainedHow: 'Tamed it.',
 	description: 'A giant snake I tamed while exploring in the amazon, can ride around and scare the hell out of people.'
 });
 
