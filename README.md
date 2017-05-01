@@ -12,7 +12,7 @@ For my second project I made a mount collecting application for World of Warcraf
 [Mountacular Trello Flow](https://trello.com/b/c6M3guR9/second-project)
 
 ## My Blog
-[My Blog](http://lazer-lizards-86830.bitballoon.com/)
+[My Portfolio](http://ryan-wilkinson.bitballoon.com/)
 
 ## Wireframes
 ### First Sketch / ERD
