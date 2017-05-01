@@ -199,7 +199,7 @@ var giantShark = new Mount ({
 	description: 'A deep sea giant, the king of the depths.'
 });
 
-User.save(function(err) {
+blueBike.save(function(err) {
   if (err) console.log(err);
   console.log('Blue Bike created');
 });
