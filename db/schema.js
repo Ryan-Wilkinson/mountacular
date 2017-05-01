@@ -50,11 +50,11 @@ UserSchema.pre('save', function(next) {
 			isAquatic: false,
 			isJumping: true,  // blizzard api ends here
 			foundAt: 'The neighborhood junkyard',
-			obtainedHow: 'Stole that shit',
-			description: 'A rusty old blue bike that a I found at the junkyard, surprisingly both tires had air. Really fun riding around and jumping curbs'
+			obtainedHow: 'Stolen.',
+			description: 'A rusty old blue bike that a I found at the junkyard, surprisingly both tires had air. Really fun riding around and jumping curbs.'
 		};
 
-		var giantCock = {
+		var giantChicken = {
 			name: 'Giant Chicken',
 			spellId: 2,
 			creatureId: 1872365,
@@ -66,12 +66,12 @@ UserSchema.pre('save', function(next) {
 			isAquatic: false,
 			isJumping: true,  // blizzard api ends here
 			foundAt: 'On the internet',
-			obtainedHow: 'Pooped it out',
-			description: 'Giant robust, colorful, and regal cock that I can ride around on and even fly for a short duration.'
+			obtainedHow: 'Found it.',
+			description: 'Giant robust, colorful, and regal chicken that I can ride around on and even fly for a short duration.'
 		};
 
-		var giantSnek = {
-			name: 'Giant Snek',
+		var giantSnake = {
+			name: 'Giant Snake',
 			spellId: 3,
 			creatureId: 1872366,
 			itemId: 13489259,
@@ -81,9 +81,9 @@ UserSchema.pre('save', function(next) {
 			isFlying: false,
 			isAquatic: false,
 			isJumping: false,  // blizzard api ends here
-			foundAt: 'The Amazon Jungle Boi',
-			obtainedHow: 'Tamed his ass',
-			description: 'A giant snek I tamed while exploring in the amazon, can ride around and scare the hell out of people.'
+			foundAt: 'The Amazon Jungle.',
+			obtainedHow: 'Tamed him.',
+			description: 'A giant snake I tamed while exploring in the amazon, can ride around and scare the hell out of people.'
 		};
 
 		var tRex = {
@@ -99,7 +99,7 @@ UserSchema.pre('save', function(next) {
 			isJumping: true,  // blizzard api ends here
 			foundAt: 'The Museum',
 			obtainedHow: 'Family Heirloom',
-			description: 'A motha fuckin t rex, holy shit.'
+			description: 'A prehistoric T-Rex.'
 		};
 
 		var blueDragon = {
@@ -115,7 +115,7 @@ UserSchema.pre('save', function(next) {
 			isJumping: true,  // blizzard api ends here
 			foundAt: 'On a Snowy Hilltop',
 			obtainedHow: 'Became best buds',
-			description: 'A giant blue dragon that eats shit.'
+			description: 'A giant blue dragon.'
 		};
 
 		var polarBear = {
@@ -131,7 +131,7 @@ UserSchema.pre('save', function(next) {
 			isJumping: true,  // blizzard api ends here
 			foundAt: 'North Pole',
 			obtainedHow: 'Raised him from a small cub',
-			description: 'Not your everyday coke drinking polar bear'
+			description: 'Not your everyday coke drinking polar bear.'
 		};
 
 		var hawk = {
@@ -147,7 +147,7 @@ UserSchema.pre('save', function(next) {
 			isJumping: true,  // blizzard api ends here
 			foundAt: 'Backyard',
 			obtainedHow: 'He found me',
-			description: 'A majestic AF hawk that came to me and landed on my arm and said lets fucking ride'
+			description: 'A majestic hawk that came to me and landed on my arm and said lets ride.'
 		};
 
 		var tigerS = {
@@ -162,8 +162,8 @@ UserSchema.pre('save', function(next) {
 			isAquatic: false,
 			isJumping: true,  // blizzard api ends here
 			foundAt: 'A golf course',
-			obtainedHow: 'Pulled a thorn out of his paw',
-			description: 'A giant tiger with a saddle. Definitely not a frosted flakes mascot'
+			obtainedHow: 'Pulled a thorn out of his paw.',
+			description: 'A giant tiger with a saddle. Definitely not a frosted flakes mascot.'
 		};
 
 		var hellCrab = {
@@ -179,7 +179,7 @@ UserSchema.pre('save', function(next) {
 			isJumping: true,  // blizzard api ends here
 			foundAt: 'Goo Lagoon',
 			obtainedHow: 'He was being bullied by other crabs',
-			description: 'A sweet ass teal crab from hell who was born larger than his brothers and sisters and as of such was constantly picked on because of it.'
+			description: 'A sweet teal colored crab from hell who was born larger than his brothers and sisters and as of such was constantly picked on because of it.'
 		};
 
 		var giantShark = {
@@ -195,10 +195,10 @@ UserSchema.pre('save', function(next) {
 			isJumping: false,  // blizzard api ends here
 			foundAt: 'Atlantis',
 			obtainedHow: 'Bested in a battle',
-			description: 'A deep sea giant, the king of the depths. Ah who am I kidding, hes just a big ass shark who lost to me in a fight.'
+			description: 'A deep sea giant, the king of the depths.'
 		};
 
-	this.mounts = [blueBike, giantCock, giantSnek, tRex, blueDragon, polarBear, hawk, tigerS, hellCrab, giantShark]
+	this.mounts = [blueBike, giantChicken, giantSnake, tRex, blueDragon, polarBear, hawk, tigerS, hellCrab, giantShark]
 
 	}
 //SAVE USER SCHEMA
